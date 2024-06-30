@@ -12,54 +12,42 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body .page-1{
+body {
+    background-color: #08172A;
+}
+
+body .page-1 {
     background: url(images/background.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    box-shadow: 5px 10px 10px #092354;
+
 }
 
-/* HERO SECTION */
-.hero {
+body .page-2 {
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+body .about-me {
+    background-color: #F5F5F5;
     display: block;
-    position: relative;
-    margin: 100px relative;
-    user-select: none;
+    width: 95vw;
+    height: 80rem;
+    border-radius: 5%;
+    margin: 15px auto;
+    margin-top: 30px;
+    box-shadow: 5px 5px 15px #092354;
 }
 
-.hero-container {
-    color: #fff;
-    width: 50rem;
-    height: 20rem; 
-}
 
-.hero h1 {
-    font-size: 10rem;
-}
 
-.hero h2 {
-    font-size: 2rem;
-}
 
-#hero-contact-btn {
-    border: 2px solid #0088a9;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.2em;
-    color: #fff;
-    font-weight: 500;
-    transition: .25s;
-    padding: 12px;
-    position: absolute;
-    text-decoration: none;
-    margin-top: 15px;
-    transition: 0.2s;
-}
-
-#hero-contact-btn:hover {
-    background-color: rgba(0,136,169, 0.3);
-    transform: translateY(-2px);
-}
 
 /* NAVIGATION BAR*/
 
@@ -73,7 +61,6 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-    /* background-color: transparent;     */
 }
 
 .header::before {
@@ -98,19 +85,8 @@ header {
     background: linear-gradient(90deg, transparent, rgba(255,255,255,.05), transparent);
 }
 
-/* !FUSE */
-
-
 .header:hover:after {
     left: 100%
-}
-
-.navbar a{
-    font-size: 1.15rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 2.5rem;
 }
 
 #check {
@@ -126,14 +102,11 @@ header {
     display: none;
 }
 
-
-/* !FUSE */
-
-
 .logo {
     font-size: 2em;
     color: white;
     user-select: none;
+    font-family: 'Times New Roman', serif;
 }
 
 .navbar {
@@ -141,13 +114,10 @@ header {
     user-select: none;
 }
 
-.navigation li:first-child {
-    margin-left: 0;
-}
 
 .navbar a{
     position: relative;
-    font-size: 1.1em;
+    font-size: 1.15em;
     color: white;
     text-decoration: none;
     font-weight: 500;
@@ -174,28 +144,71 @@ header {
     transform: scaleX(1);
 }
 
-/* HERO SECTION */
-
+/* !HERO SECTION */
+/* !!!!!!!!!!!!! */
+/* !!!!!!!!!!!!! */
 .hero {
-    position: relative;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    height: 100%;
 }
+
+.hero-container {
+    color: #fff;
+    width: 70rem;
+    height: 40rem;
+    text-align: left;
+    align-content: center;
+    justify-content: center;
+    max-width: max-content;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 10rem;
+    width: fit-content;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    width: fit-content;
+}
+
+#hero-contact-btn {
+    border: 2px solid #0088a9;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 500;
+    transition: .25s;
+    padding: 12px;
+    position: absolute;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: 0.2s;
+}
+
+#hero-contact-btn:hover {
+    background-color: rgba(0,136,169, 0.3);
+    transform: translateY(-2px);
+}
+
+
 
 
 /* BREAKPOINTS */
-@media (max-width: 992px){
-    .header {
-        padding: 1.3rem 5%;
-    }
 
-}
 
 @media (max-width: 768px) {
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+    
     .icons {
         display: inline-flex;
     }
@@ -214,6 +227,7 @@ header {
 
     .navbar {
         position: absolute;
+        justify-content: center;
         top: 100%;
         left: 0;
         width: 100%;
@@ -224,15 +238,15 @@ header {
         overflow: hidden;
         transition: .3s ease;
     }
-    
+
     #check:checked~.navbar {
-        height: 17.7rem; 
+        height: 15rem; 
     }
 
     .navbar a{
         display: block;
         font-size: 1.1rem;
-        margin: 1.5rem 0;
+        margin-top: 1.5rem;
         text-align: center;
         transform: translateY(-50px);
         opacity: 0;
