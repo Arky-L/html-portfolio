@@ -30,22 +30,59 @@ body .page-1 {
 body .page-2 {
     justify-content: center;
     align-items: center;
-    
-    
+}
+
+.languages {
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    background-color: #F8F8FF;
+    width: 70rem;
+    box-shadow: 10px 10px 15px #092354;
+    border-radius: 25px;
+}
+
+.lang-logo {
+    max-width: 100px;
 }
 
 body .about-me {
-    background-color: #F5F5F5;
+    background-color: #F8F8FF;
     display: block;
     width: 95vw;
-    height: 80rem;
-    border-radius: 5%;
+    height: 54rem;
+    border-radius: 50px;
     margin: 15px auto;
-    margin-top: 30px;
-    box-shadow: 5px 5px 15px #092354;
+    margin-top: 100px;
+    box-shadow: 10px 10px 10px #092354;
 }
 
 
+.about-me-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+
+.about-me-description {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    
+}
+
+.about-me-img {
+    max-width: min-content;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.about-me-img img{
+    width: 30rem;
+    border-radius: 10%;
+    margin: 30px;
+}
 
 
 
