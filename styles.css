@@ -51,11 +51,13 @@ body .page-2 {
     max-height: 90px;
 }
 
+/* !!! ABOUT ME SECTION !!!*/
+
 body .about-me {
     background-color: #F8F8FF;
     display: block;
     width: 90vw;
-    height: 40rem;
+    height: 36rem;
     border-radius: 50px;
     margin: 15px auto;
     margin-top: 100px;
@@ -67,7 +69,6 @@ body .about-me {
     display: grid;
     grid-template-columns: 1fr 1fr 5fr;
     grid-template-rows: 1fr 1fr 1fr;
-    
 }
 
 .about-me-description {
@@ -75,6 +76,8 @@ body .about-me {
     grid-row-start: 1;
     margin-right: 5rem;
     margin-top: 2rem;
+    min-width: 30rem;
+    max-height: fit-content;
 }
 
 .about-me-img {
@@ -90,6 +93,7 @@ body .about-me {
 
 .about-me-description h2 {
     font-size: 2.5rem;
+    color: #081424;
 }
 
 .about-me-description p {
@@ -97,9 +101,41 @@ body .about-me {
     line-height: 1.5;
 }
 
+body .projects {
+    background-color: #F8F8FF;
+    display: block;
+    width: 100%;
+    height: 50rem;
+    /* border-radius: 50px; */
+    margin: 15px auto;
+    margin-top: 100px;
+    box-shadow: 10px 10px 10px #092354;
+}
+
+/* !!! PROJECTS SECTION !!! */
+
+.projects-container {
+    width: 80vw;
+    margin: auto;
+}
+
+.projects-title {
+    font-size: 1.75rem;
+    text-align: center;
+    padding-top: 5rem;
+    color: #081424;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+}
 
 
-/* NAVIGATION BAR*/
+
+/* !!! NAVIGATION BAR !!! */
 
 header {
     position: fixed;
